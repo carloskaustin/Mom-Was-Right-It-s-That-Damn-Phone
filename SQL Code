@@ -1,18 +1,13 @@
--- 🧩 Social Media Hours vs. Well-Being
--- Purpose: Aggregate average sleep hours, mental health scores, and addiction levels 
--- for students based on their daily social media usage.
-SELECT AVG_Daily_Usage_Hours AS Avg_Daily_Hours,
-       AVG(Sleep_Hours_Per_Night),
-       AVG(Mental_Health_Score),
-       AVG(Addicted_Score) AS Avg_Addicted_Score 
+-- Aggregates average sleep hours, mental health scores, and addiction levels for students based on their daily social media usage.
+SELECT AVG_Daily_Usage_Hours AS Avg_Daily_Social_Media_Hours,
+       AVG(Sleep_Hours_Per_Night) AS Avg_Sleep_Hours,
+       AVG(Mental_Health_Score) AS Avg_Mental_Health_Score,
+       AVG(Addicted_Score) AS Avg_Addiction_Score 
 FROM students
 GROUP BY Avg_Daily_Hours
 ORDER BY 1 DESC;
 
-
--- 🧩 Platform Popularity
--- Purpose: Count the number of students using each platform and calculate 
--- the percentage share of total users.
+-- Counts the number of students using each platform and calculates the percentage share of total users.
 SELECT Most_Used_Platform, 
        COUNT(*) AS Count, 
        ROUND(100.0 * COUNT(*) / (SELECT COUNT(*) FROM students), 2) AS Percent
@@ -20,10 +15,7 @@ FROM students
 GROUP BY Most_Used_Platform
 ORDER BY Count DESC;
 
-
--- 🧩 Platform Use by Academic Level
--- Purpose: Compare how platform preferences (Instagram, TikTok, Facebook, etc.) 
--- vary across high school, undergrad, and graduate students.
+-- Compares how platform preferences vary across high school, undergrad, and graduate students.
 SELECT Academic_level, 
        Most_Used_Platform, 
        COUNT(Most_Used_Platform) AS Count
@@ -31,11 +23,7 @@ FROM students
 GROUP BY 1, 2
 ORDER BY 1, 3 DESC;
 
-
--- 🧩 Academic Performance Impact
--- Purpose: Measure how social media usage correlates with students reporting 
--- academic performance being affected, segmented by academic level. 
--- Also calculate the percentage affected.
+-- Measures how social media usage affects academic performance across academic levels. Also calculates the percentage affected.
 SELECT AVG(AVG_Daily_Usage_Hours),
        Academic_Level,
        COUNT(CASE WHEN Affects_Academic_Performance = 'Yes' THEN 1 END) AS affects_academics,
