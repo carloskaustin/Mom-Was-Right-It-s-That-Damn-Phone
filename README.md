@@ -24,9 +24,9 @@ Below is a snapshot of the interactive Tableau dashboard created for this projec
 ---
 ## 📂 Repository Contents  
 
-- **README.md**→ Project overview, documentation, and links to the interactive Tableau dashboard.
-- **SQL Code**→ SQL queries for data cleaning, exploration, and analysis.  
-- **social_media_dashboard.png**→ Screenshot of Tableau dashboard.
+- **README.md** → Project overview, documentation, and links to the interactive Tableau dashboard.
+- **SQL Code** → SQL queries for data cleaning, exploration, and analysis.  
+- **social_media_dashboard.png** → Screenshot of Tableau dashboard.
 
 ---
 
