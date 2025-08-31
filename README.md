@@ -1,4 +1,4 @@
-# Social Media & Student Outcomes Analysis  
+# Mom was right, it’s that damn phone! 📱    
 
 This project analyzes students' social media usage and its effects on sleep, mental health, addiction, and academic performance.  
 
