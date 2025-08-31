@@ -1,39 +1,46 @@
--- Social media hours effects on mental health, social media addiction score, and sleep
-
-SELECT AVG_Daily_Usage_Hours AS Avg_Daily_Hours ,AVG(Sleep_Hours_Per_Night), AVG(Mental_Health_Score), AVG(Addicted_Score) AS Avg_Addicted_Score 
+-- 🧩 Social Media Hours vs. Well-Being
+-- Purpose: Aggregate average sleep hours, mental health scores, and addiction levels 
+-- for students based on their daily social media usage.
+SELECT AVG_Daily_Usage_Hours AS Avg_Daily_Hours,
+       AVG(Sleep_Hours_Per_Night),
+       AVG(Mental_Health_Score),
+       AVG(Addicted_Score) AS Avg_Addicted_Score 
 FROM students
 GROUP BY Avg_Daily_Hours
 ORDER BY 1 DESC;
 
 
--- Number of People Using Each App and percentage share 
-
-SELECT Most_Used_Platform, COUNT(*) AS Count, ROUND(100.0 * COUNT(*) / (SELECT COUNT(*) FROM students), 2) AS Percent
+-- 🧩 Platform Popularity
+-- Purpose: Count the number of students using each platform and calculate 
+-- the percentage share of total users.
+SELECT Most_Used_Platform, 
+       COUNT(*) AS Count, 
+       ROUND(100.0 * COUNT(*) / (SELECT COUNT(*) FROM students), 2) AS Percent
 FROM students
 GROUP BY Most_Used_Platform
 ORDER BY Count DESC;
 
 
-
--- App use amongst different academic levels
--- add in percent of responses column, rename count column
-SELECT Academic_level, Most_Used_Platform, COUNT(Most_Used_Platform) AS Count
+-- 🧩 Platform Use by Academic Level
+-- Purpose: Compare how platform preferences (Instagram, TikTok, Facebook, etc.) 
+-- vary across high school, undergrad, and graduate students.
+SELECT Academic_level, 
+       Most_Used_Platform, 
+       COUNT(Most_Used_Platform) AS Count
 FROM students
 GROUP BY 1, 2
-ORDER BY 1,3 DESC;
+ORDER BY 1, 3 DESC;
 
 
-
-
--- Usage broken down by academic level and the affect on academic performance
--- While usage remains relatively the same, the pct of ppl saying their academics has been affected differs depending on their level of schooling.
--- Younger, less advanced students have more trouble balancing their workload with social media than more advanced students 
-SELECT 
-AVG(AVG_Daily_Usage_Hours),
-Academic_Level,
-COUNT(CASE WHEN Affects_Academic_Performance = 'Yes' THEN 1 END) AS affects_academics,
-COUNT(CASE WHEN Affects_Academic_Performance = 'No' THEN 1 END) AS does_not_affect_academics,
-COUNT(CASE WHEN Affects_Academic_Performance = 'Yes' THEN 1 END) * 100 / COUNT(Country) AS pct_affected
+-- 🧩 Academic Performance Impact
+-- Purpose: Measure how social media usage correlates with students reporting 
+-- academic performance being affected, segmented by academic level. 
+-- Also calculate the percentage affected.
+SELECT AVG(AVG_Daily_Usage_Hours),
+       Academic_Level,
+       COUNT(CASE WHEN Affects_Academic_Performance = 'Yes' THEN 1 END) AS affects_academics,
+       COUNT(CASE WHEN Affects_Academic_Performance = 'No' THEN 1 END) AS does_not_affect_academics,
+       COUNT(CASE WHEN Affects_Academic_Performance = 'Yes' THEN 1 END) * 100 / COUNT(Country) AS pct_affected
 FROM students
 GROUP BY 2
 ORDER BY 5 DESC;
