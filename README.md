@@ -20,10 +20,9 @@ Below is a snapshot of the interactive Tableau dashboard created for this projec
 
 ![Tableau Dashboard Preview](images/social_media_dashboard.png)  
 
-🔗 [**View the full interactive dashboard on Tableau Public →**](https://public.tableau.com/your-link-here)  
+🔗 [**View the full interactive dashboard on Tableau Public →**](https://public.tableau.com/app/profile/carlos.austin/viz/SocialMediaUseAmongstStudents/Dashboard1?publish=yes)
 
 ---
-
 ## 📂 Repository Contents  
 
 - **SQL Code/** → SQL queries for data cleaning, exploration, and analysis.  
