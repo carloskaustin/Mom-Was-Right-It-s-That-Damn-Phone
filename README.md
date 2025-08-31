@@ -26,8 +26,8 @@ Below is a snapshot of the interactive Tableau dashboard created for this projec
 
 ## 📂 Repository Contents  
 
-- **sql/** → SQL queries for data cleaning, exploration, and analysis.  
-- **images/** → Screenshots of Tableau dashboards and visualizations.  
+- **SQL Code/** → SQL queries for data cleaning, exploration, and analysis.  
+- **Dashboard/** → Screenshot of Tableau dashboard.  
 - **README.md** → Project overview, documentation, and links to the interactive Tableau dashboard.  
 
 ---
