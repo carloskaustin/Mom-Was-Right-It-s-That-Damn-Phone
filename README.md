@@ -1,4 +1,4 @@
-# Mom was right, it’s that damn phone! 📱  
+# Mom Was Right, It’s That Damn Phone! 📱  
 
 *An analysis of how social media use impacts student sleep, mental health, addiction, and academics.*  
 
