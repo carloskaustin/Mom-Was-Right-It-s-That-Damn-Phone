@@ -1,24 +1,6 @@
-# Mom was right, it’s that damn phone! 📱    
+# Mom was right, it’s that damn phone! 📱  
 
-This project analyzes students' social media usage and its effects on sleep, mental health, addiction, and academic performance.  
+*An analysis of how social media use impacts student sleep, mental health, addiction, and academics.*  
 
-The data comes from a Kaggle dataset containing anonymized records of students’ social media behaviors and related life outcomes:  
-[Social Media Addiction vs Relationships Dataset](https://www.kaggle.com/datasets/adilshamim8/social-media-addiction-vs-relationships)  
-
----
-
-## Tableau Visualization  
-
-Below is a snapshot of the interactive Tableau dashboard created for this project:  
-
-![Tableau Dashboard Preview](images/social_media_dashboard.png)  
-
-🔗 [View the full interactive dashboard on Tableau Public](https://public.tableau.com/your-link-here)  
-
----
-
-## Repository Contents  
-- `data/` → Dataset(s) used for analysis  
-- `notebooks/` → Jupyter/SQL scripts for cleaning and analysis  
-- `images/` → Screenshots and visuals of the Tableau dashboards  
-- `README.md` → Project overview  
+![Made with SQL](https://img.shields.io/badge/Made%20with-SQL-blue)  
+![Visualized in Tableau](https://img.shields.io/badge/Visualized%20in-Tableau-orange)  
