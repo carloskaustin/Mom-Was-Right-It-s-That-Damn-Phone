@@ -18,7 +18,7 @@ The data comes from a Kaggle dataset containing anonymized records of students�
 ## 📊 Tableau Visualization  
 Below is a snapshot of the interactive Tableau dashboard created for this project:  
 
-![Tableau Dashboard Preview](Dashboard/social_media_dashboard.png)  
+![Tableau Dashboard Preview](images/social_media_dashboard.png)
 
 🔗 [**View the full interactive dashboard on Tableau Public →**](https://public.tableau.com/app/profile/carlos.austin/viz/SocialMediaUseAmongstStudents/Dashboard1?publish=yes)  
 ---
