@@ -42,7 +42,7 @@ Below is a snapshot of the interactive Tableau dashboard created for this projec
 
  ## 🔑 Key Insights  
 
-- Students with **higher daily social media usage** reported fewer sleep hours, **lower mental health scores**, and higher addiction scores.  
+- Students with **higher daily social media usage** reported fewer sleep hours, lower mental health scores, and higher addiction scores.  
 - **Younger students** experienced greater academic impacts compared to more advanced students, even at similar usage levels.  
 - **Platform preferences varied by academic level**:  
   - **Instagram** was consistently popular across high school, undergrad, and graduate students.  
