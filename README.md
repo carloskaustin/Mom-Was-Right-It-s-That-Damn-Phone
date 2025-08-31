@@ -18,7 +18,7 @@ The data comes from a Kaggle dataset containing anonymized records of students�
 ## 📊 Tableau Visualization  
 Below is a snapshot of the interactive Tableau dashboard created for this project:  
 
-![Tableau Dashboard Preview](images/Mom Was Right, It's That Damn Phone.png)  
+![Tableau Dashboard Preview](dashboard/social_media_dashboard.png)  
 
 🔗 [**View the full interactive dashboard on Tableau Public →**](https://public.tableau.com/app/profile/carlos.austin/viz/SocialMediaUseAmongstStudents/Dashboard1?publish=yes)  
 ---
